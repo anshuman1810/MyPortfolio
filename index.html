@@ -1,13 +1,330 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <!-- CSS stylesheet here -->
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Anshuman-Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Description / Keywords -->
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- Mobile web app capable -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="HandheldFriendly" content="true" />
+  <!-- Facebook Open Graph -->
+  <meta property="og:title" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- Bootstrap and core app CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <!-- Latest compiled and minified JavaScript -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+
+  <style>
+    .error{
+      color:red;
+    }
+    button:disabled {
+      background: #dddddd !important;
+      cursor: no-drop;
+    }
+  </style>
 </head>
-<body>
-    <h1>my website</h1>
-</body>
+  <body>
+    <!-- header section starts here -->
+    <div class="header-main">
+      <div class="header fixed-top">
+        <div class="header-left-main">
+          <ul class="header-content">
+            <li>
+              <a href="#about" class="div-scroll">About me</a>
+            </li>
+            <li>
+              <a href="#tech" class="">Technologies</a>
+            </li>
+            <li>
+              <a href="" class="">Projects</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header-right-main">
+          <a
+            href="https://www.linkedin.com/in/anshuman-chaubey-1244171b5/"
+            class="social-icons"
+          >
+            <img src="assets/img/linkedin-white.png" class="ln-icon" alt="" />
+          </a>
+          <a href="https://github.com/anshuman1810" class="social-icons">
+            <img src="assets/img/github-white.png" class="gh-icon" alt="" />
+          </a>
+          <a
+            href="https://www.facebook.com/anshuman.chaubey"
+            class="social-icons"
+          >
+            <img src="assets/img/facebook-white.png" class="fb-icon" alt="" />
+          </a>
+          <a href="https://www.instagram.com/chaubey1810/" class="social-icons">
+            <img src="assets/img/instagram-white.png" class="ig-icon" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- wrapper section starts here -->
+
+    <div class="wrapper pg-home">
+      <section class="home-banner">
+        <div class="banner-text">
+          <div class="container">
+            <div class="banner-content">
+              <div class="cover">
+                  <span class="dev-name">Anshuman Chaubey</span>
+                  <div class="hero">
+                <hgroup>
+                  <h1>
+                    I am a
+                    <span
+                      class="typewrite"
+                      data-period="1000"
+                      data-type='[  "UI/UX Developer", "UI/UX Designer" ]'
+                    >
+                      <span class="wrap"></span>
+                    </span>
+                  </h1>
+                </hgroup>
+            </div>
+            <div class="resume-area">
+                <a href="assets/resume/Anshuman_Chaubey_Resume_7.pdf" download="" class="download-resume">Download CV</a>
+            </div>
+              </div>
+              <div class="banner-inner-image">
+                <img
+                  src="assets/img/portfolio-profile-pic-modified.jpeg" class="pp"
+                  alt=""
+                />
+                <!-- <img src="assets/img/profile-pic-flip.png" class="pp flip" alt=""> -->
+              </div>
+              
+            </div>
+            <div class="chai-with-me">
+              <a href="#contact">
+              <img src="assets/img/chai.png" alt="">
+              <span>With Me</span>
+            </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about me section starts here -->
+
+      <section class="about-us" id="about">
+          <div class="container">
+              <h2 class="common-title">About me</h2>
+              <div class="about-picture-section">
+                  <div class="about-inner">
+                  <div class="about-image">
+                  </div>
+                  <img src="assets/img/about-me.jpeg" alt="">
+          </div>
+          <p class="about-para">
+            Hello I am Anshuman Chaubey, a innovative UI/UX developer with a passion for creating exceptional user experiences. I am from India and working with Cognizant.
+            With a keen eye for detail and a deep understanding of user-centric design principles, 
+            I consistently crafts interfaces that seamlessly blend aesthetics with functionality. <br /><br />
+
+            Drawing on a rich background in design and development, I have the unique ability to translate complex ideas into intuitive and visually appealing user interfaces.
+             Whether it's a website, mobile app, or software platform, has a knack for turning abstract concepts into interactive and engaging digital experiences.
+          </p>
+        </div>
+        </div>
+      </section>
+
+     
+
+
+      <!-- Technologies section starts here -->
+
+      <section class="technologies" id="tech">
+          <div class="container">
+            <h2 class="common-title">Technologies</h2>
+            <div class="skills-wrapper-main">
+            <div class="progress-main">
+                <div class="progress-bar-heading">
+                <span class="p-tech">HTML</span>
+                <!-- <span class="p-percent">90%</span> -->
+            </div>
+              <div class="progress">
+                <div class="progress-value" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="progress-main">
+              <div class="progress-bar-heading">
+              <span class="p-tech">CSS / SASS / Bootstrap</span>
+              <!-- <span class="p-percent">90%</span> -->
+          </div>
+            <div class="progress">
+              <div class="progress-value" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <div class="progress-main">
+            <div class="progress-bar-heading">
+            <span class="p-tech">JavaScript / Jquery</span>
+            <!-- <span class="p-percent">70%</span> -->
+        </div>
+          <div class="progress">
+            <div class="progress-value" style="width: 70%;"></div>
+          </div>
+        </div>
+
+        <div class="progress-main">
+          <div class="progress-bar-heading">
+          <span class="p-tech">UI Design in Figma</span>
+          <!-- <span class="p-percent">60%</span> -->
+      </div>
+        <div class="progress">
+          <div class="progress-value" style="width: 60%;"></div>
+        </div>
+      </div>
+
+      <div class="progress-main">
+        <div class="progress-bar-heading">
+        <span class="p-tech">React JS</span>
+        <!-- <span class="p-percent">40%</span> -->
+    </div>
+      <div class="progress">
+        <div class="progress-value" style="width: 40%;"></div>
+      </div>
+    </div>
+
+    <div class="progress-main">
+      <div class="progress-bar-heading">
+      <span class="p-tech">React Native</span>
+      <!-- <span class="p-percent">30%</span> -->
+  </div>
+    <div class="progress">
+      <div class="progress-value" style="width: 30%;"></div>
+    </div>
+  </div>
+            </div>
+          </div>
+      </section>
+
+
+      <!-- chai with me section starts here -->
+
+      <section class="contact-me" id="contact">
+        <div class="container">
+          <h2 class="common-title">Chai With Me</h2>
+          <div class="contact-form-wrapper">
+            <div class="form-left">
+              <span>Let's talk over a cup of Chai !</span>
+              <div class="form-banner">
+              <img src="assets/img/chai-banner.jpg" alt="">
+            </div>
+            </div>
+            <div class="form-right">
+              <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+                <!-- <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select> -->
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+
+    <!-- javascript starts here -->
+
+    <script type="text/javascript">
+      var TxtType = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = "";
+        this.tick();
+        this.isDeleting = false;
+      };
+
+      TxtType.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) {
+          delta /= 2;
+        }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === "") {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+        }
+
+        setTimeout(function () {
+          that.tick();
+        }, delta);
+      };
+
+      window.onload = function () {
+        var elements = document.getElementsByClassName("typewrite");
+        for (var i = 0; i < elements.length; i++) {
+          var toRotate = elements[i].getAttribute("data-type");
+          var period = elements[i].getAttribute("data-period");
+          if (toRotate) {
+            new TxtType(elements[i], JSON.parse(toRotate), period);
+          }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { }";
+        document.body.appendChild(css);
+      };
+    </script>
+  </body>
 </html>

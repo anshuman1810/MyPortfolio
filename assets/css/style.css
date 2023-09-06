@@ -1,4 +1,407 @@
-h1{
+/* body styles starts here */
+html {
+  scroll-behavior: smooth;
+  font-size: initial;
+}
+
+body {
+    background-color: #0f1724;
+  }
+  
+  /* header styles starts here */
+  
+  /* .header-main{
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+  } */
+  
+  .header-main .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 30px;
+    background: #0f1724;
+
+  }
+  .header-main .header .header-left-main .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-main .header .header-left-main .header-content li {
+    list-style-type: none;
+  }
+  
+  .header-main .header .header-left-main .header-content li a {
+    padding-right: 20px;
+    color: #e7e8ed;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .header-main .header .header-right-main .social-icons {
+    padding: 10px;
+    display: inline-block;
+  }
+  
+  .header-main .header .header-right-main .social-icons img {
+    width: 100%;
+    max-width: 20px;
+    object-fit: contain;
+    overflow: hidden;
+    height: auto;
+  }
+  
+  /* wrapper styles starts here */
+
+  .pg-home{
+    margin-top: 64px;
+  }
+  
+  .wrapper .home-banner {
+    position: relative;
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: inherit;
+    height: 755px;
+    width: 100vw;
+    mix-blend-mode: exclusion;
+  }
+  
+  .wrapper .home-banner .banner-text {
+    color: white;
+    height: 100% !important;
+    display: flex;
+  }
+  
+  .wrapper .home-banner .banner-text .banner-content {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100% !important;
+    max-height: 650px;
+    justify-content: space-between;
+  }
+  
+  .wrapper .home-banner .banner-text .banner-content .cover {
+    /* margin-top: 125px; */
+  }
+
+  .wrapper .home-banner .banner-text .banner-content .resume-area{
+      margin-top: 30px;
+  }
+
+  .wrapper .home-banner .banner-text .banner-content .resume-area a {
+    color: #d09f43;
+    display: block;
+    background: #ffc1073b;
+    width: 100%;
+    max-width: 150px;
     text-align: center;
-    color: red;
+    padding: 7px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .wrapper .home-banner .banner-text .banner-content .cover .hero .typewrite{
+      color: goldenrod;
+  }
+  
+  .wrapper .home-banner .banner-text .banner-content .banner-inner-image {
+   height: 300px;
+   width: 300px;
+   border-radius: 50%;
+   border: 1px solid transparent;
+   background-color: #ab7d6666;
+   position: relative;
+  }
+  
+  .wrapper .home-banner .banner-text .banner-content .banner-inner-image .pp {
+   height: 299px;
+   width: 299px;
+   border-radius: 50%;
+  }
+
+  /* .wrapper .home-banner .banner-text .banner-content .banner-inner-image .flip{
+  position: absolute;
+  top: 0;
+  display: none;
+  height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    background-color: #ab7d6666;
+  } */
+  
+  .wrapper .home-banner .banner-text .banner-content .cover .dev-name {
+    font-weight: 400;
+    font-family: cursive;
+    font-size: 40px;
+  }
+
+  .wrapper .home-banner .banner-text .chai-with-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wrapper .home-banner .banner-text .chai-with-me a{
+    display: flex;
+    align-items: center;
+    background: #fbfbfb;
+    width: 100%;
+    max-width: 180px;
+    justify-content: center;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 8px 0 4px 0;
+    border: 2px solid #d09f43;
+  }
+
+  .wrapper .home-banner .banner-text .chai-with-me a img{
+    width: 67px;
+    height: 36px;
+    object-fit: contain;
+    overflow: hidden;
+  }
+
+  .wrapper .home-banner .banner-text .chai-with-me a span{
+    color: #d09f43;
+    font-size: 16px;
+  }
+  
+
+  /* About me css style starts here */
+
+  .wrapper .about-us .common-title{
+    margin: 100px 0px 50px 0;
+    font-weight: bold;
+    font-size: 26px;
+    font-weight: 600;
+    position: relative;
+    color: #f0ebe3;
+  }
+
+
+  .wrapper .about-us .common-title::before{
+    position: absolute;
+      background: #d1a042;
+      height: 30px;
+      width: 4px;
+      bottom: -13px;
+      content: "";
+      left: -17px;
+      top: 0px; 
+  }
+
+  .wrapper .about-us .about-para {
+    color: #fff;
+    font-size: 14px;
+    text-align: justify;
+    width: 100%;
+    max-width: 830px;
+  }
+
+  .wrapper .about-us .about-picture-section{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .wrapper .about-us .about-inner{
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .wrapper .about-us .about-inner .about-image{
+    border: 5px solid #d09f43;
+    height: 200px;
+    width: 160px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .wrapper .about-us .about-inner img{
+    width: 100%;
+    max-width: 146px;
+    position: absolute;
+    height: 186px;
+    top: 7px;
+    left: 7px;
+  }
+
+
+  /* Technologies css starts here */
+
+  .wrapper .technologies .common-title{
+    margin: 100px 0px 50px 0;
+    font-weight: bold;
+    font-size: 26px;
+    font-weight: 600;
+    position: relative;
+    color: #f0ebe3;
+  }
+
+
+  .wrapper .technologies .common-title::before{
+    position: absolute;
+      background: #d1a042;
+      height: 30px;
+      width: 4px;
+      bottom: -13px;
+      content: "";
+      left: -17px;
+      top: 0px; 
+  }
+
+  .wrapper .technologies .skills-wrapper-main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .wrapper .technologies .skills-wrapper-main .progress-bar-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 10px;
+  }
+
+  .wrapper .technologies .skills-wrapper-main .progress-bar-heading span,.p-tech,.p-percent{
+      color: #fff;
+  }
+
+  .wrapper .technologies .skills-wrapper-main .progress {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 15px;
+    width: 500px;
+    margin: 5px 0px 40px 0;
+  }
+  
+  .wrapper .technologies .skills-wrapper-main .progress .progress-value {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: linear-gradient(45deg,  #d09f43, transparent);
+    /* #E100FF #7F00FF */
+    height: 9px;
+    width: 0;
+  }
+  
+  
+  @keyframes load {
+    0% { width: 0; }
+  }
+
+
+/* chai with me css styles starts here */
+
+.wrapper .contact-me .common-title{
+  margin: 100px 0px 50px 0;
+  font-weight: bold;
+  font-size: 26px;
+  font-weight: 600;
+  position: relative;
+  color: #f0ebe3;
+}
+
+
+.wrapper .contact-me .common-title::before{
+  position: absolute;
+    background: #d1a042;
+    height: 30px;
+    width: 4px;
+    bottom: -13px;
+    content: "";
+    left: -17px;
+    top: 0px; 
+}
+
+.wrapper .contact-me .contact-form-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+
+.wrapper .contact-me .contact-form-wrapper .form-left{
+  width: 100%;
+  max-width: 400px;
+}
+
+.wrapper .contact-me .contact-form-wrapper .form-left span{
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 19px;
+    text-align: center;
+    display: block;
+}
+
+
+.wrapper .contact-me .contact-form-wrapper .form-left .form-banner {
+  width: 100%;
+  height: 465px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.wrapper .contact-me .contact-form-wrapper .form-left .form-banner img{
+  width: 100%;
+  height: 465px;
+  object-fit: cover;
+}
+
+.wrapper .contact-me .contact-form-wrapper .form-right{
+  width: 100%;
+  max-width: 600px;
+}
+
+.wrapper .contact-me input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: none;
+  outline: none;
+}
+
+.wrapper .contact-me input[type=submit] {
+  background-color: #ab863d;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input::placeholder{
+  font-size: 14px;
+}
+
+/* .wrapper .contact-me input[type=submit]:hover {
+  background-color: #45a049;
+} */
+
+
+.wrapper .contact-me .contact-form-wrapper label{
+  color: #fff;
 }
