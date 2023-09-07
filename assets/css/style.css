@@ -372,7 +372,7 @@ body {
   padding-top: 20px;
 }
 .wrapper .contact-me .form {
-  padding: 70px 20px 20px;
+  padding: 100px 20px 20px;
 }
 .wrapper .contact-me p {
   position: relative;
@@ -411,6 +411,9 @@ textarea {
   line-height: 1em;
   padding: 0;
   font-size: 20px;
+  background: #a1803c;
+  padding: 5px 40px;
+  border-radius: 5px;
 }
 .wrapper .contact-me input[type="submit"]:focus {
   background: rgba(238, 238, 238, 0.2);
@@ -427,9 +430,41 @@ textarea {
   text-shadow: none;
 }
 
+.wrapper .contact-me input[type="submit"]:focus {
+  background: transparent;
+}
+
+.mobile-header-wrapper {
+  display: none;
+}
+
 /* Media Query styles starts here */
 
+@media only screen and (max-width: 991px) {
+  .wrapper .home-banner .banner-text .banner-content .cover .hero h1 {
+    font-size: 20px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
+  .header-main .header {
+    display: none;
+  }
+
+  .mobile-header-wrapper {
+    display: block;
+    padding: 10px 0 11px 15px;
+    background: #997a3b;
+  }
+
+  .fixed-top {
+    position: fixed;
+    top: -4px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
   .wrapper .home-banner .banner-text .banner-content {
     flex-wrap: wrap;
     justify-content: center;
@@ -454,6 +489,40 @@ textarea {
 
   .wrapper .about-us .about-picture-section {
     flex-wrap: wrap;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
   }
 }
 

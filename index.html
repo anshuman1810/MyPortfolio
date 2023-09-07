@@ -91,6 +91,26 @@
           </a>
         </div>
       </div>
+
+      <!-- mobile phone menu starts here -->
+
+      <div class="mobile-header-wrapper fixed-top" id="m-header">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="#about" onclick="closeNav()">About me</a>
+          <a href="#tech" onclick="closeNav()">Technologies</a>
+          <a href="#" onclick="closeNav()">Projects</a>
+        </div>
+        <span
+          style="font-size: 30px; cursor: pointer; color: #fff"
+          onclick="openNav()"
+          >&#9776;</span
+        >
+      </div>
+
+      <!-- mobile phone menu ends here -->
     </div>
 
     <!-- wrapper section starts here -->
@@ -155,11 +175,11 @@
               <img src="assets/img/about-me.jpeg" alt="" />
             </div>
             <p class="about-para">
-              Hello I am Anshuman Chaubey, a innovative UI/UX developer with a
+              Hello I am Anshuman Chaubey, an innovative UI/UX developer with a
               passion for creating exceptional user experiences. I am from India
               and working with Cognizant. With a keen eye for detail and a deep
               understanding of user-centric design principles, I consistently
-              crafts interfaces that seamlessly blend aesthetics with
+              craft interfaces that seamlessly blend aesthetics with
               functionality. <br /><br />
 
               Drawing on a rich background in design and development, I have the
@@ -353,6 +373,16 @@
         css.innerHTML = ".typewrite > .wrap { }";
         document.body.appendChild(css);
       };
+    </script>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
     </script>
   </body>
 </html>
