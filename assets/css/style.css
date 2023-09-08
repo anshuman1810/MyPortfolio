@@ -63,6 +63,7 @@ body {
   height: 755px;
   width: 100vw;
   mix-blend-mode: exclusion;
+  background-attachment: fixed;
 }
 
 .wrapper .home-banner .banner-text {
@@ -287,6 +288,67 @@ body {
   }
 }
 
+/* services css styles starts here */
+
+.wrapper .services .common-title {
+  margin: 100px 0px 50px 0;
+  font-weight: bold;
+  font-size: 26px;
+  font-weight: 600;
+  position: relative;
+  color: #f0ebe3;
+}
+
+.wrapper .services .common-title::before {
+  position: absolute;
+  background: #d1a042;
+  height: 30px;
+  width: 4px;
+  bottom: -13px;
+  content: "";
+  left: -17px;
+  top: 0px;
+}
+
+.wrapper .services .services-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .services .services-wrapper .services-image {
+  width: 100%;
+  max-width: 400px;
+  border: 5px solid #d1a042;
+  padding: 40px;
+}
+
+.wrapper .services .services-wrapper .services-image img{
+  width: 100%;
+  max-width: 400px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.wrapper .services .services-wrapper .services-image:hover img{
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.wrapper .services .services-wrapper .services-list ul{
+  list-style: none;
+
+}
+
+.wrapper .services .services-wrapper .services-list ul li{
+  color: #fff;
+    margin: 25px 0px;
+    font-size: 24px;
+}
+
+
 /* chai with me css styles starts here */
 
 .wrapper .contact-me .common-title {
@@ -438,6 +500,11 @@ textarea {
   display: none;
 }
 
+
+
+
+
+
 /* Media Query styles starts here */
 
 @media only screen and (max-width: 991px) {
@@ -463,6 +530,16 @@ textarea {
     right: 0;
     left: 0;
     z-index: 1030;
+  }
+
+  .header-right-main{
+    position: absolute;
+    top: 22px;
+    right: 15px;
+  }
+
+  .header-right-main a{
+    margin: 0 5px;
   }
 
   .wrapper .home-banner .banner-text .banner-content {
@@ -508,7 +585,7 @@ textarea {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color:#997b3b;    
     display: block;
     transition: 0.3s;
   }
@@ -523,6 +600,15 @@ textarea {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+  }
+
+  .wrapper .services .services-wrapper{
+    flex-wrap: wrap;
+  }
+
+  .wrapper .services .services-wrapper .services-list ul{
+    text-align: center;
+    padding: 0;
   }
 }
 
